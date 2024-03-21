@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Current Day</title>
+</head>
+<body>
+  <h1 id="dayDisplay">Today is: </h1>
+
+  <script>
+    var currentDate = new Date();
+    var currentDay = currentDate.getDay();
+    var dayDisplay = document.getElementById("dayDisplay");
+
+    switch (currentDay) {
+      case 0:
+        dayDisplay.textContent += "Sunday";
+        break;
+      case 1:
+        dayDisplay.textContent += "Monday";
+        break;
+      case 2:
+        dayDisplay.textContent += "Tuesday";
+        break;
+      case 3:
+        dayDisplay.textContent += "Wednesday";
+        break;
+      case 4:
+        dayDisplay.textContent += "Thursday";
+        break;
+      case 5:
+        dayDisplay.textContent += "Friday";
+        break;
+      case 6:
+        dayDisplay.textContent += "Saturday";
+        break;
+      default:
+        dayDisplay.textContent += "Unknown";
+        break;
+    }
+  </script>
+</body>
+</html>

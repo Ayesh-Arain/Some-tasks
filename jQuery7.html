@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#paragraph").mouseleave(function(){
+    alert("bye leave this paragraph 1!");
+    $("#para").mouseleave(function(){
+        alert("bye leave this paragraph 2!");
+    });
+  });
+});
+</script>
+</head>
+<body>
+<h1>Lorem, ipsum dolor.</h1>
+<p id="paragraph" style="width : fit-content">Lorem ipsum dolor sit.</p>
+<p id="para" style="width : fit-content">Lorem ipsum,  Aliquam modi temporibus, tempore eveniet nam saepe ab! Consequuntur quo fugiat fuga praesentium ipsam accusantium ea, laudantium voluptate in tenetur doloremque iure?</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil molestiae sint magnam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore eveniet ipsam laborum, cumque veritatis?</p>
+
+</body>
+</html>

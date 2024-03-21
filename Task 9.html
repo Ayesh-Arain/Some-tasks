@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Text Color on Click</title>
+<style>
+  
+  #text {
+    color: black;
+    cursor: pointer; 
+  }
+</style>
+</head>
+<body>
+
+<h2 id="text" onclick="changeColor()">Click me to change color!</h2>
+
+<script>
+function changeColor() {
+  var textElement = document.getElementById("text");
+
+  var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+  textElement.style.color = randomColor;
+}
+</script>
+
+</body>
+</html>

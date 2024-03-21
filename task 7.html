@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form with Image Buttons</title>
+<style>
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"] {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .custom-button {
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+    background-size: ;
+  }
+  .submit-button {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiC6Wks50dTRWitUN2qGXC7qcrDyyE4Zd9iQ&usqp=CAU') ; /* Path to your submit button image */
+  }
+
+  .reset-button {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiC6Wks50dTRWitUN2qGXC7qcrDyyE4Zd9iQ&usqp=CAU'); /* Path to your reset button image */
+  }
+</style>
+</head>
+<body>
+  <form>
+    <div class="form-group">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <button type="submit" class="custom-button submit-button"></button>
+    <button type="reset" class="custom-button reset-button"></button>
+  </form>
+</body>
+</html>

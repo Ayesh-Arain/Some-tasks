@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image with Tooltip</title>
+<style>
+
+    img {
+        border: 3px solid black;
+        height: 300px;
+        width: 300px;
+    }
+
+
+    .image:hover::after {
+        content: "I am Image in Webpage";
+        display: block;
+        position: absolute;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+</style>
+</head>
+<body>
+    <h2>image</h2>
+<div class="image">
+    <img src="https://images.unsplash.com/photo-1707343843437-caacff5cfa74?q=80&w=1375&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image">
+    <div class="image">
+        <span class="image">i am image in the webpage</span>
+      </div>
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#para").hover(function(){
+alert("You entered p1!");
+},
+function(){
+alert("Bye! You now leave p1!");
+$("#image").hover(function(){
+alert("You entered image");
+},
+function(){
+alert("Bye! You now leave image!");
+}); 
+});
+}); 
+</script>
+</head>
+<body>
+<p id="para" style="width : fit-content">Lorem ipsum,  Aliquam modi temporibus, tempore eveniet nam saepe ab! Consequuntur quo fugiat fuga praesentium ipsam accusantium ea, laudantium voluptate in tenetur doloremque iure?</p>
+<img id="image" src="https://th.bing.com/th/id/OIP.uSMLtFQty4jVVUo-a-59WAHaF7?rs=1&pid=ImgDetMain" alt="">
+</body>
+</html>

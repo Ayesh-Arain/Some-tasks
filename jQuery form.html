@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "yellow");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "green");
+
+    $("textarea").blur(function(){
+    $(this).css("background-color", "green");
+  });
+})
+});
+</script>
+</head>
+<body>
+
+<h2>Simple Form</h2>
+
+<form action="/submi
+t_form" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your Name"><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Your Email"><br>
+    
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" cols="50" placeholder="Your Message"></textarea> <br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
